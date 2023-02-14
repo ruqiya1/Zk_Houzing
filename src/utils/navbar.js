@@ -7,7 +7,6 @@ const HomePage = React.lazy(() => import("../pages/Home"));
 const Properties = React.lazy(() => import("../pages/Properties"));
 const HouseItem = React.lazy(() => import("../pages/HouseItem"));
 
-
 // import HomePage from "../pages/Home";
 // import Properties from "../pages/Properties";
 
