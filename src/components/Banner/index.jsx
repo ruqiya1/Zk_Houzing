@@ -17,4 +17,5 @@ const GenCarousel = () => {
     </Container>
   );
 };
+
 export default GenCarousel;
