@@ -14,15 +14,6 @@ const GenCarousel = () => {
         </Content.Title>
         <Button>Read more</Button>
       </Content>
-
-      <Container>
-        <Content>
-          <Content.Title>
-            Vermont Farmhouse With Antique Jail Is the Week's Most Popular Home
-          </Content.Title>
-          <Button>Read more</Button>
-        </Content>
-      </Container>
     </Container>
   );
 };
