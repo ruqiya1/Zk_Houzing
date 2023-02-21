@@ -6,10 +6,12 @@ const CategoryCard = ({ onClick, data = {} }) => {
   const { name } = data;
   return (
     <Container onClick={onClick}>
+
       <Img src={categoryHouse || noImg} />
       <Content>
         {name || 'Category Name'}
       </Content>
+      
     </Container>
   );
 };
