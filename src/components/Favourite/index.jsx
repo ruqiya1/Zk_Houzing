@@ -14,7 +14,14 @@ const Favourite = () => {
   const [, dispatch] = useContext(PropertiesContext);
 
   const { refetch } = useQuery(
-    
+    [search],
+    () => {
+      return fetch(`${REACT_APP_BASE_URL}/houses/getAll/favouriteList`, {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      }).then((res) => res.json());
+    },
     {
       onSuccess: (res) => {
         dispatch({ type: "refetch", payload: refetch });
